@@ -3,6 +3,18 @@ public with sharing class DataFix {
 
     }
     
+    public static void cleanData()
+    {
+     	// Clear Partner Accounts
+        List<Account> lstAccs = [SELECT ID FROM Account WHERE Partner_Status__c = 'Active'];
+        Database.delete(lstAccs);
+        
+        // Clear Partner Type
+        List<Partner_Type__c> lstPartnerTypes = [SELECT ID FROM Partner_Type__c];
+        Database.delete(lstPartnerTypes);       
+        
+        
+    }
 
     public static void UpdatePartnerType() {
 
