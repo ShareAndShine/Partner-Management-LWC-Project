@@ -12,3 +12,7 @@ package.xml
 **/__tests__/**
 
 force-app/main/default/appMenus/AppSwitcher.appMenu-meta.xml
+
+force-app\main\default\tabs\standard-home.tab-meta.xml
+
+force-app\main\default\objects\Account\fields\OperatingHoursId__c.field-meta.xml
