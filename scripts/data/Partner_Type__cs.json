@@ -1,0 +1,60 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Partner_Type__c",
+                "referenceId": "Partner_Type__cRef1"
+            },
+            "Name": "Marketing Partner"
+        },
+        {
+            "attributes": {
+                "type": "Partner_Type__c",
+                "referenceId": "Partner_Type__cRef2"
+            },
+            "Name": "Resellers"
+        },
+        {
+            "attributes": {
+                "type": "Partner_Type__c",
+                "referenceId": "Partner_Type__cRef3"
+            },
+            "Name": "Recruited Advocates"
+        },
+        {
+            "attributes": {
+                "type": "Partner_Type__c",
+                "referenceId": "Partner_Type__cRef4"
+            },
+            "Name": "Affiliates"
+        },
+        {
+            "attributes": {
+                "type": "Partner_Type__c",
+                "referenceId": "Partner_Type__cRef5"
+            },
+            "Name": "Social Media Channel Partner"
+        },
+        {
+            "attributes": {
+                "type": "Partner_Type__c",
+                "referenceId": "Partner_Type__cRef6"
+            },
+            "Name": "Distributors"
+        },
+        {
+            "attributes": {
+                "type": "Partner_Type__c",
+                "referenceId": "Partner_Type__cRef7"
+            },
+            "Name": "Client Advocates"
+        },
+        {
+            "attributes": {
+                "type": "Partner_Type__c",
+                "referenceId": "Partner_Type__cRef8"
+            },
+            "Name": "Technology Partner"
+        }
+    ]
+}

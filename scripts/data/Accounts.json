@@ -1,0 +1,180 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef1"
+            },
+            "Name": "Adobe Inc",
+            "Partner_Budget__c": 50000,
+            "Partner_Total_Sales_Revenue__c": 700000,
+            "Partner_Active_Pipeline_Value__c": 50000,
+            "Partner_Contract_Start_Date__c": "2022-10-01",
+            "Partner_Contract_End_Date__c": "2023-10-01",
+            "Partner_Training_Completed__c": true,
+            "Partner_Status__c": "Active",
+            "Number_of_trained_Partner_contacts__c": 3,
+            "Partner_WebSite__c": "www.adobe.com"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef2"
+            },
+            "Name": "Amazon WS",
+            "Partner_Budget__c": 100000,
+            "Partner_Total_Sales_Revenue__c": 600000,
+            "Partner_Active_Pipeline_Value__c": 100000,
+            "Partner_Contract_Start_Date__c": "2022-10-01",
+            "Partner_Contract_End_Date__c": "2023-10-01",
+            "Partner_Training_Completed__c": true,
+            "Partner_Status__c": "Active",
+            "Number_of_trained_Partner_contacts__c": 10,
+            "Partner_WebSite__c": "https://www.amazon.com"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef3"
+            },
+            "Name": "Salesforce Inc",
+            "Partner_Budget__c": 100000,
+            "Partner_Total_Sales_Revenue__c": 800000,
+            "Partner_Active_Pipeline_Value__c": 200000,
+            "Partner_Contract_Start_Date__c": "2022-10-19",
+            "Partner_Contract_End_Date__c": "2026-11-01",
+            "Partner_Training_Completed__c": true,
+            "Partner_Status__c": "Active",
+            "Number_of_trained_Partner_contacts__c": 50,
+            "Partner_WebSite__c": "https://www.salesforce.com/in/"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef4"
+            },
+            "Name": "Oracle Inc",
+            "Partner_Budget__c": 140000,
+            "Partner_Total_Sales_Revenue__c": 900000,
+            "Partner_Active_Pipeline_Value__c": 200000,
+            "Partner_Contract_Start_Date__c": "2022-10-14",
+            "Partner_Contract_End_Date__c": "2026-10-21",
+            "Partner_Training_Completed__c": true,
+            "Partner_Status__c": "Active",
+            "Number_of_trained_Partner_contacts__c": 40,
+            "Partner_WebSite__c": "https://www.oracle.com/in/"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef5"
+            },
+            "Name": "Demandbase",
+            "Partner_Budget__c": 40000,
+            "Partner_Total_Sales_Revenue__c": 300000,
+            "Partner_Active_Pipeline_Value__c": 30000,
+            "Partner_Contract_Start_Date__c": "2022-10-05",
+            "Partner_Contract_End_Date__c": "2027-10-12",
+            "Partner_Training_Completed__c": true,
+            "Partner_Status__c": "Active",
+            "Number_of_trained_Partner_contacts__c": 10,
+            "Partner_WebSite__c": "https://www.demandbase.com/"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef6"
+            },
+            "Name": "Cisco",
+            "Partner_Budget__c": 250000,
+            "Partner_Total_Sales_Revenue__c": 300000,
+            "Partner_Active_Pipeline_Value__c": 500000,
+            "Partner_Contract_Start_Date__c": "2022-10-01",
+            "Partner_Contract_End_Date__c": "2024-10-01",
+            "Partner_Training_Completed__c": true,
+            "Partner_Status__c": "Active",
+            "Number_of_trained_Partner_contacts__c": 10,
+            "Partner_WebSite__c": "https://www.cisco.com/c/en_in/index.html"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef7"
+            },
+            "Name": "Nutanix",
+            "Partner_Budget__c": 25000,
+            "Partner_Total_Sales_Revenue__c": 200000,
+            "Partner_Active_Pipeline_Value__c": 10000,
+            "Partner_Contract_Start_Date__c": "2022-10-17",
+            "Partner_Contract_End_Date__c": "2023-10-25",
+            "Partner_Training_Completed__c": true,
+            "Partner_Status__c": "Active",
+            "Number_of_trained_Partner_contacts__c": 3,
+            "Partner_WebSite__c": "https://www.nutanix.com/"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef8"
+            },
+            "Name": "Microsoft",
+            "Partner_Budget__c": 90000,
+            "Partner_Total_Sales_Revenue__c": 600000,
+            "Partner_Active_Pipeline_Value__c": 200000,
+            "Partner_Contract_Start_Date__c": "2022-10-25",
+            "Partner_Contract_End_Date__c": "2025-10-26",
+            "Partner_Training_Completed__c": true,
+            "Partner_Status__c": "Active",
+            "Number_of_trained_Partner_contacts__c": 50,
+            "Partner_WebSite__c": "https://www.microsoft.com/en-in/microsoft-365/onedrive/online-cloud-storage"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef9"
+            },
+            "Name": "MailChimp",
+            "Partner_Budget__c": 20000,
+            "Partner_Total_Sales_Revenue__c": 100000,
+            "Partner_Active_Pipeline_Value__c": 10000,
+            "Partner_Contract_Start_Date__c": "2022-10-26",
+            "Partner_Contract_End_Date__c": "2026-10-04",
+            "Partner_Training_Completed__c": true,
+            "Partner_Status__c": "Active",
+            "Number_of_trained_Partner_contacts__c": 20,
+            "Partner_WebSite__c": "https://mailchimp.com/"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef10"
+            },
+            "Name": "6sense",
+            "Partner_Budget__c": 25000,
+            "Partner_Total_Sales_Revenue__c": 200000,
+            "Partner_Active_Pipeline_Value__c": 20000,
+            "Partner_Contract_Start_Date__c": "2022-10-25",
+            "Partner_Contract_End_Date__c": "2025-10-19",
+            "Partner_Training_Completed__c": true,
+            "Partner_Status__c": "Active",
+            "Number_of_trained_Partner_contacts__c": 10,
+            "Partner_WebSite__c": "https://6sense.com/"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef11"
+            },
+            "Name": "Google Cloud",
+            "Partner_Budget__c": 100000,
+            "Partner_Total_Sales_Revenue__c": 400000,
+            "Partner_Active_Pipeline_Value__c": 100000,
+            "Partner_Contract_Start_Date__c": "2022-10-05",
+            "Partner_Contract_End_Date__c": "2025-09-27",
+            "Partner_Training_Completed__c": true,
+            "Partner_Status__c": "Active",
+            "Number_of_trained_Partner_contacts__c": 40,
+            "Partner_WebSite__c": "https://cloud.withgoogle.com/next"
+        }
+    ]
+}

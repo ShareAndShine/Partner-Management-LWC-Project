@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Partner_Type_Lookup__c</columns>
+    <columns>Partner_Active_Pipeline_Value__c</columns>
+    <columns>Partner_Budget__c</columns>
+    <columns>Partner_Contract_End_Date__c</columns>
+    <columns>Partner_Contract_Start_Date__c</columns>
+    <columns>Partner_Geo_Location__Latitude__s</columns>
+    <columns>Partner_Geo_Location__Longitude__s</columns>
+    <columns>Partner_Primary_POC__c</columns>
+    <columns>Partner_Status__c</columns>
+    <columns>Partner_Total_Sales_Revenue__c</columns>
+    <columns>Partner_Training_Completed__c</columns>
+    <columns>Partner_WebSite__c</columns>
+    <columns>Number_of_trained_Partner_contacts__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Partner_Status__c</field>
+        <operation>contains</operation>
+        <value>Active,Inactive,Pending</value>
+    </filters>
+    <label>Partner Accounts</label>
+</ListView>

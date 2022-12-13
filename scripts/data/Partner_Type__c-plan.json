@@ -1,0 +1,10 @@
+[
+    {
+        "sobject": "Partner_Type__c",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "Partner_Type__cs.json"
+        ]
+    }
+]
