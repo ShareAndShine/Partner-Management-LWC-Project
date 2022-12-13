@@ -16,3 +16,10 @@ force-app/main/default/appMenus/AppSwitcher.appMenu-meta.xml
 force-app\main\default\tabs\standard-home.tab-meta.xml
 
 force-app\main\default\objects\Account\fields\OperatingHoursId__c.field-meta.xml
+
+force-app/main/default/layouts/Account-Account %28Marketing%29 Layout.layout-meta.xml
+
+force-app/main/default/layouts/Account-Account %28Sales%29 Layout.layout-meta.xml
+
+force-app/main/default/layouts/Account-Account %28Support%29 Layout.layout-meta.xml
+
