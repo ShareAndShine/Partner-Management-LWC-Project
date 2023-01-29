@@ -34,3 +34,8 @@ sfdx force:data:tree:import -p scripts\data\Account-Contact-plan.json -u <Replac
     DataFix.UpdatePartnerType();
 
 #   3.2.1 Go to Account list view -> Partner Accounts -> Manually update Primary contact POC for each account -> Save
+
+
+# 4 Use this method to clean Sample Data and Start Fresh
+#   3.1.1 Use Developer console and Run CleanData method from DataFix class
+    DataFix.CleanData();
