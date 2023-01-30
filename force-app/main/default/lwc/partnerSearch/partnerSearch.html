@@ -1,4 +1,72 @@
 <!-- sldsValidatorIgnore -->
 <template>
-   
+
+
+    <lightning-layout horizontal-align="center">
+
+        <lightning-layout-item padding="horizontal-small">
+
+            <lightning-layout>
+                <!-- column 1 -->
+                <lightning-layout-item padding="horizontal-small" size="6">
+                    <!-- app desc-->
+                    <p>{appdesc}</p>
+                </lightning-layout-item>
+
+                <!-- column 2 -->
+                <lightning-layout-item padding="horizontal-small" size="6">
+
+                    <lightning-layout vertical-align="center">
+                        <lightning-layout-item padding="slds-var-m-around_medium around-small" size="12">
+                            <!-- channel partner combo box-->
+                            <div class="slds-var-p-around_small">
+                                <lightning-combobox name="progress" label="Status" value={value}
+                                    placeholder="Select Progress" options={options} onchange={handleChange}>
+                                </lightning-combobox>
+
+                                <p>Selected value is: {value}</p>
+
+                            </div>
+
+                            <!-- Action icons-->
+                            <div  class="slds-var-p-around_small slds-align_absolute-center">
+
+                                <lightning-button-icon icon-name="action:add_relationship" variant="brand"
+                                    alternative-text="Add New Partner Type" title="Add New Partner Type">
+                                </lightning-button-icon>
+
+                                <lightning-button-icon icon-name="action:new_account" variant="brand"
+                                    alternative-text="Add New Account" title="Add New Account" class="slds-var-m-left_medium"></lightning-button-icon>
+
+                                <lightning-button-icon icon-name="action:new_contact" variant="brand"
+                                    alternative-text="Add New Partner Contact" title="Add New Partner Contact" class="slds-var-m-left_medium">
+                                </lightning-button-icon>
+                            </div>
+
+                        </lightning-layout-item>
+                    </lightning-layout>
+
+
+                </lightning-layout-item>
+
+
+            </lightning-layout>
+
+        </lightning-layout-item>
+
+
+
+
+    </lightning-layout>
+
+
+
+
+
+
+
+
+
+
+
 </template>
