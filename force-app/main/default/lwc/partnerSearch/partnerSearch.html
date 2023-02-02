@@ -20,11 +20,11 @@
                         <lightning-layout-item padding="slds-var-m-around_medium around-small" size="12">
                             <!-- channel partner combo box-->
                             <div class="slds-var-p-around_small">
-                                <lightning-combobox name="progress" label="Status" value={value}
-                                    placeholder="Select Progress" options={options} onchange={handleChange}>
+                                <lightning-combobox name="Select Partner Type"  value={value}
+                                    placeholder="Select Partner Type" variant="label-hidden" options={partnerTypes} onchange={handleChange}>
                                 </lightning-combobox>
 
-                                <p>Selected value is: {value}</p>
+                               
 
                             </div>
 
@@ -32,14 +32,18 @@
                             <div  class="slds-var-p-around_small slds-align_absolute-center">
 
                                 <lightning-button-icon icon-name="action:add_relationship" variant="brand"
-                                    alternative-text="Add New Partner Type" title="Add New Partner Type">
+                                    alternative-text="Add New Partner Type" 
+                                    title="Add New Partner Type" onclick={OpenNewPartnerTypeStdPage}>
                                 </lightning-button-icon>
 
                                 <lightning-button-icon icon-name="action:new_account" variant="brand"
-                                    alternative-text="Add New Account" title="Add New Account" class="slds-var-m-left_medium"></lightning-button-icon>
+                                    alternative-text="Add New Account" 
+                                    title="Add New Account" class="slds-var-m-left_medium"
+                                    onclick={OpenNewAccountStdPage}></lightning-button-icon>
 
                                 <lightning-button-icon icon-name="action:new_contact" variant="brand"
-                                    alternative-text="Add New Partner Contact" title="Add New Partner Contact" class="slds-var-m-left_medium">
+                                    alternative-text="Add New Partner Contact" title="Add New Partner Contact" 
+                                    class="slds-var-m-left_medium" onclick={OpenNewContactStdPage}>
                                 </lightning-button-icon>
                             </div>
 
