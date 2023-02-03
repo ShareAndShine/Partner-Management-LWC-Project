@@ -1,4 +1,26 @@
 <!-- sldsValidatorIgnore -->
 <template>
     
+    <div>
+        <img src={partnerAccount.userImg} class="slds-align_absolute-center">
+        <div class="slds-var-m-around_x-small">
+            <h3 title="Company">
+                <p class="slds-align_absolute-center title">{partnerAccount.companyName}</p>
+            </h3>
+        
+
+        
+            <h3 title="Name">
+                <p  class="slds-align_absolute-center title">{partnerAccount.userName}</p>
+            </h3>
+        </div>
+        <div class="slds-var-m-around_x-small slds-align_absolute-center">
+            <lightning-badge label={partnerAccount.partnerType}></lightning-badge>
+        </div>
+
+
+
+
+    </div>
+
 </template>
