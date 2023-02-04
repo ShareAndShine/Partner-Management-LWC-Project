@@ -1,5 +1,38 @@
 <template>
-    <!-- Child Component-->
 
-    <c-partner-card partner-account={accountData}></c-partner-card>
+    <lightning-layout multiple-rows horizontal-align="center">
+        <template if:true={IsPartnerfound}>
+            <!-- Show data-->
+             <!-- Loop thru collection of data and pass each partner record to partner card to display the info-->
+            <template for:each={partnerDataFromDB} for:item="partner">
+
+                <lightning-layout-item key={partner.Id} padding="around-small" size="12" small-device-size="6"
+                    large-device-size="3" medium-device-size="4">
+                    <!-- Child Component-->
+                    <c-partner-card partner-account={partner}></c-partner-card>
+
+                </lightning-layout-item>
+
+            </template>
+        </template>
+        <template if:false={IsPartnerfound}>
+            <p>No Partners found !!!</p> 
+        </template>
+
+
+
+       
+
+    </lightning-layout>
+
+
+
+
+
+
+
+
+
+
+
 </template>
