@@ -2,7 +2,7 @@
 <template>
     
     <div>
-        <img src="https://randomuser.me/api/portraits/thumb/women/16.jpg" class="slds-align_absolute-center">
+        <img src={userImg} class="slds-align_absolute-center">
         <div class="slds-var-m-around_x-small">
             <h3 title="Company">
                 <p class="slds-align_absolute-center title">{partnerAccount.Name}</p>
@@ -15,7 +15,8 @@
             </h3>
         </div>
         <div class="slds-var-m-around_x-small slds-align_absolute-center">
-            <lightning-badge label={partnerAccount.Partner_Type_Lookup__r.Name}></lightning-badge>
+            <lightning-badge label={partnerAccount.Partner_Type_Lookup__r.Name} 
+            class={channelpartnerStyle}></lightning-badge>
         </div>
 
 
