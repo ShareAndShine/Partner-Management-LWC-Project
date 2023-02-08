@@ -1,4 +1,4 @@
-import { LightningElement, wire } from 'lwc';
+import { LightningElement, wire, api } from 'lwc';
 
 import fetchPartnerType from '@salesforce/apex/partnerSearchResultController.getPartners';
 
@@ -12,12 +12,13 @@ export default class PartnerSearchResult extends LightningElement {
         partnerType:'Marketing PArtner'
     };*/
 
-    channelPartnerTypeID = '';
+    // public property that receives selected partner type Id
+    @api channelPartnerTypeId ;
 
     partnerDataFromDB; // local property to hold all partner from DB
 
     // Make a call to APEX method
-    @wire(fetchPartnerType,{partnerTypeId: '$channelPartnerTypeID'})
+    @wire(fetchPartnerType,{partnerTypeId: '$channelPartnerTypeId'})
     processOutput({data, error}) // Use {data, error} default system properties from result object to access retrieved data 
     {
         if(data)

@@ -15,6 +15,11 @@ export default class PartnerSearch extends NavigationMixin(LightningElement) {
   
     handleChange(event) {
         
+        const partnerTypeId = event.detail.value; // get selected channel partner Type Id
+
+        // create and dispatch custom event so that selected channel partner Type Id is sent to master containner component
+        const partnerTypeSelectedChangeEvent = new CustomEvent('selectedpartnertype',{detail: partnerTypeId});
+        this.dispatchEvent(partnerTypeSelectedChangeEvent);
     }
 
     //Step 3: Import wire decorator > Import APEX method > Make a call to the method
