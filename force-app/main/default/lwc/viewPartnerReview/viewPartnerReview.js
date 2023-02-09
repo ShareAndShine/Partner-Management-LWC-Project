@@ -39,14 +39,29 @@ export default class ViewPartnerReview extends LightningElement {
 
     navigateNextReview()
     {
-        this.recordIndex++;
+        if(this.recordIndex === this.partnerReviews.length -1)
+        {
+            this.recordIndex = this.partnerReviews.length -1;
+        }
+        else
+        {
+            this.recordIndex++;
+        }
+        
         this.getCurrentPartnerReview(); 
     }
 
 
-    navigatePrevioustReview()
+    navigatepreviousReview()
     {
-        this.recordIndex--;
+        if(this.recordIndex <= 0)
+        {
+            this.recordIndex = 0;
+        }
+        else
+        {
+            this.recordIndex--;
+        }
         this.getCurrentPartnerReview(); 
     }
 
