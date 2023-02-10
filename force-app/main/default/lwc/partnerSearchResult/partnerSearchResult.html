@@ -9,7 +9,9 @@
                 <lightning-layout-item key={partner.Id} padding="around-small" size="12" small-device-size="6"
                     large-device-size="3" medium-device-size="4">
                     <!-- Child Component-->
-                    <c-partner-card partner-account={partner}></c-partner-card>
+                    <c-partner-card partner-account={partner} 
+                    selected-partner-account-id={selectedPartnerCardAccountId}
+                    onpartnerselect={selectedPartnerHandler}></c-partner-card>
 
                 </lightning-layout-item>
 

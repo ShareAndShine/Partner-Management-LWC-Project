@@ -16,14 +16,29 @@ import Number_of_trained_Partner_contacts__c_FIELD from '@salesforce/schema/Acco
 import Partner_Latitude_FIELD from '@salesforce/schema/Account.Partner_Geo_Location__Latitude__s';
 import Partner_Longitude_FIELD from '@salesforce/schema/Account.Partner_Geo_Location__Longitude__s';
 
+
+// import message channel - Step 1: LMS
+import PARTNER_CHANNEL from '@salesforce/messageChannel/PartnerAccountDataMessageChannel__c';
+
+// import functions to publish data  - Step 1: LMS
+import { subscribe, unsubscribe, MessageContext } from 'lightning/messageService';
+
+
 export default class PartnerDetail extends NavigationMixin(LightningElement) {
 
     
     objectApi = 'Account';
-    selectedPartnerAccountId = '0015h00001CcXOBAA3'; //TODO: Remove hard coding
+    selectedPartnerAccountId;// = '0015h00001CcXOBAA3'; //TODO: Remove hard coding
+    channelName;
+    selectedPartnerAccountName; 
 
     showLocation = false; // property to hold falg to open location component
 
+    subscription; // property to check if subscription is already done or not
+
+    //Step 2: LMS - After import make a wire call to Message context
+    @wire(MessageContext)
+    messageContext;
 
     // Expose property and map fields
     // Bind the property in the template
@@ -38,7 +53,33 @@ export default class PartnerDetail extends NavigationMixin(LightningElement) {
     partnerLongitude = Partner_Longitude_FIELD;
     partnerLatitude = Partner_Latitude_FIELD;
 
+    connectedCallback()
+    {
+        //Step 3: LMS - subscribe to the channel
+        //check if subscription already exists
+        if(this.subscription)
+        {
+            return;
+        }
 
+        this.subscription = subscribe(this.messageContext, PARTNER_CHANNEL, (message) => { this.processMessage(message);})
+    }
+
+    // call back function to unpack data received from the publisher
+    processMessage(message)
+    {
+        // unpack data
+        this.selectedPartnerAccountId = message.selectedPartnerAccountId;
+        this.selectedPartnerAccountName = message.selectedPartnerAccountName;
+        this.channelName = message.channelname;
+
+    }
+
+    discconnectedCallback()
+    {
+        unsubscribe(this.subscription);
+        this.subscription = null;
+    }
 
     get IsPartnerSelected()
     {

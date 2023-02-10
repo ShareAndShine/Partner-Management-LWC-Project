@@ -15,6 +15,11 @@ export default class PartnerSearchResult extends LightningElement {
     // public property that receives selected partner type Id
     @api channelPartnerTypeId ;
 
+    // property to hold selected partner account Id received from child component (partner Card)
+    selectedPartnerCardAccountId;
+
+
+
     partnerDataFromDB; // local property to hold all partner from DB
 
     // Make a call to APEX method
@@ -42,6 +47,13 @@ export default class PartnerSearchResult extends LightningElement {
             return true;
         }
         return false;
+    }
+
+
+    selectedPartnerHandler(event)
+    {
+        const partnerId = event.detail;
+        this.selectedPartnerCardAccountId = partnerId;
     }
    
 }
